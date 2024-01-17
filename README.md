@@ -5,3 +5,5 @@ Também fiz uma cauculadora utilizando o terminal como dispositivo de entrada e 
 # Dia 02:
 Nesse dia eu tentei fazer um jogo da velha utilizando o conceito de strings, arrays e condicionais (falta eu resolver os bugs do conceito de entrada e saida.
 # Dia 03:
+Nesse dia eu tentei fazer um programa que caucula os lados do triângulo escaleno com a fórmula de Pitágoras, nesse dia eu aprendi mais sobre os comandos matemáticos do c#.
+# Dia 04:
