@@ -58,6 +58,24 @@ namespace program
             {
                 Console.WriteLine(not);
             }
+            return string.Empty;
+        }
+
+        public static string searchProduct()
+        {
+            string productString = string.Empty;
+            Console.WriteLine("\nInsira o produto para pesquisa: ");
+            productString = Console.ReadLine();
+            if (productString != string.Empty)
+            {
+                mainDatabase(productString);
+                productString = string.Empty;
+            }
+            else
+            {
+                Console.WriteLine("\nInsira um valor: ");
+            }
+            return string.Empty;
         }
 
         public static void Main(string[] args)
@@ -84,13 +102,15 @@ namespace program
                 Console.WriteLine("\nQuantos produtos você quer cadastrar? \n");
                 string numberofvariables = Console.ReadLine();
                 int numberVariablesOf = int.Parse(numberofvariables);
+                bool isUsed = false;
                 for (int i = 1; i <= numberVariablesOf; i++)
                 {
-                    ReturnProductValues(pr, prId, prPrices, prRef, i);
                     pr = product[i];
                     prId = IDs[i];
                     prPrices = prices[i];
                     prRef = references[i];
+                    ReturnProductValues(pr, prId, prPrices, prRef, i);
+                    mainDatabase(pr, prPrices, prRef, i , isUsed);
                 }
                 Console.WriteLine("\nProdutos cadastrados com sucesso!\n");
             }
