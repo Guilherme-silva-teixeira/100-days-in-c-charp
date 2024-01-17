@@ -26,19 +26,66 @@ namespace program
             Console.WriteLine("{0}{1}{2}{3}{4}{5}{6}{7}", fullbar, breakL, mainLineN1, mainLineN2, mainLineN3, mainLineN4, mainLineN5, fullbar);
         }
      
+        public static string ReturnProductValues()
+        {
+            string productName = "";
+            string productID = "";
+            string productPrice = string.Format("0");
+            string reference = string.Format("000");
+
+            Console.WriteLine("\nInsira o nome do produto: \n");
+            productName = Console.ReadLine() ?? string.Empty;
+            Console.WriteLine("\nInsira o id do produto: \n");
+            productID = Console.ReadLine() ?? string.Empty;
+            Console.WriteLine("\nInsira o preço do produto: \n");
+            productPrice = Console.ReadLine() ?? string.Empty;
+            Console.WriteLine("\nInsira a refrerência do produto: \n");
+            reference = Console.ReadLine() ?? string.Empty;
+
+            return productName + productID + productPrice + reference;
+        }
+
         public static void Main(string[] args)
         {
             string mainLForFunction = string.Format("+============================+");
             string machineName = string.Format("executado em: {0}\n", Environment.MachineName);
             string AtualTime = string.Format("Em : {0} "+"as {1} UTC", DateTime.Now.ToString("dd-MM-yy HH-mm-ss"), DateTime.UtcNow.ToString("HH-mm-ss"));
             string[] CreateArray = new string[999];
+            string[] product = new string[999];
+            string[] references = new string[999];
+            string[] prices = new string[999];
+            string[] IDs = new string[999];
             int ArrayValue = 0;
-            for (int i = 0; i < ArrayValue; i++)
-            {
-
-            }
             ShowMenu();
             Console.WriteLine(machineName+AtualTime+"\n"+mainLForFunction);
+            Console.WriteLine("Opção: ");
+            int option = Console.Read();
+            switch (option)
+            {
+                case 1:
+                    Console.WriteLine("\nQuantos produtos você quer cadastrar? \n");
+                    break;
+
+                case 2:
+
+                    break;
+
+                case 3:
+
+                    break;
+
+                case 4:
+
+                    break;
+
+                case 5:
+
+                    break;
+
+                default:
+                    Console.WriteLine("\nOpção inválida");
+                    break;
+            }
         }
     }
 }
