@@ -26,13 +26,9 @@ namespace program
             Console.WriteLine("{0}{1}{2}{3}{4}{5}{6}{7}", fullbar, breakL, mainLineN1, mainLineN2, mainLineN3, mainLineN4, mainLineN5, fullbar);
         }
      
-        public static string ReturnProductValues()
+        public static string ReturnProductValues(string productName = "", string productID = "", string productPrice = "0", string reference = "000" , int forId = 0)
         {
-            string productName = "";
-            string productID = "";
-            string productPrice = string.Format("0");
-            string reference = string.Format("000");
-
+            Console.WriteLine("\n\n+===========================+\nproduto {0}",forId);
             Console.WriteLine("\nInsira o nome do produto: \n");
             productName = Console.ReadLine() ?? string.Empty;
             Console.WriteLine("\nInsira o id do produto: \n");
@@ -41,8 +37,27 @@ namespace program
             productPrice = Console.ReadLine() ?? string.Empty;
             Console.WriteLine("\nInsira a refrerência do produto: \n");
             reference = Console.ReadLine() ?? string.Empty;
-
             return productName + productID + productPrice + reference;
+        }
+
+        public static string mainDatabase(string name, string price, string reference, int id = 1, bool isUsed = false)
+        {
+            string[] n = new string[999];
+            string[] p = new string[999];
+            string[] r = new string[999];
+            string not = string.Format("não armazenado");
+            name = n[id] ?? string.Empty;
+            price = p[id] ?? string.Empty;
+            reference = r[id] ?? string.Empty;
+            string valueForReturn = string.Format(n[id], p[id], r[id]);
+            if (isUsed == true)
+            {
+                return valueForReturn;
+            }
+            else
+            {
+                Console.WriteLine(not);
+            }
         }
 
         public static void Main(string[] args)
@@ -55,36 +70,33 @@ namespace program
             string[] references = new string[999];
             string[] prices = new string[999];
             string[] IDs = new string[999];
+            string pr = "";
+            string prId = "";
+            string prPrices = "";
+            string prRef = "";
             int ArrayValue = 0;
             ShowMenu();
             Console.WriteLine(machineName+AtualTime+"\n"+mainLForFunction);
             Console.WriteLine("Opção: ");
-            int option = Console.Read();
-            switch (option)
+            string option = Console.ReadLine();
+            if (option.Equals("1"))
             {
-                case 1:
-                    Console.WriteLine("\nQuantos produtos você quer cadastrar? \n");
-                    break;
+                Console.WriteLine("\nQuantos produtos você quer cadastrar? \n");
+                string numberofvariables = Console.ReadLine();
+                int numberVariablesOf = int.Parse(numberofvariables);
+                for (int i = 1; i <= numberVariablesOf; i++)
+                {
+                    ReturnProductValues(pr, prId, prPrices, prRef, i);
+                    pr = product[i];
+                    prId = IDs[i];
+                    prPrices = prices[i];
+                    prRef = references[i];
+                }
+                Console.WriteLine("\nProdutos cadastrados com sucesso!\n");
+            }
+            else if (option.Equals("2"))
+            {
 
-                case 2:
-
-                    break;
-
-                case 3:
-
-                    break;
-
-                case 4:
-
-                    break;
-
-                case 5:
-
-                    break;
-
-                default:
-                    Console.WriteLine("\nOpção inválida");
-                    break;
             }
         }
     }
