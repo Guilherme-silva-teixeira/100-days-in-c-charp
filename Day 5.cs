@@ -5,6 +5,13 @@ namespace program
 {
     class project5
     {
+        public struct IndexDatabase
+        {
+            public string[] names;
+            public float[] prices;
+            public int[] id;
+            public string[] references;
+        }
         public static void ShowMenu()
         {
             string mainL = string.Format("============================");
@@ -28,15 +35,28 @@ namespace program
      
         public static string ReturnProductValues(string productName = "", string productID = "", string productPrice = "0", string reference = "000" , int forId = 0)
         {
+            IndexDatabase product;
+            product.names = new string[999];
+            product.id = new int[999];
+            product.prices = new float[999];
+            product.references = new string[999];
+            string ref1;
+            int ref2;
+            string F_ref1;
+            float F_ref2;
             Console.WriteLine("\n\n+===========================+\nproduto {0}",forId);
             Console.WriteLine("\nInsira o nome do produto: \n");
-            productName = Console.ReadLine() ?? string.Empty;
+            product.names[forId] = Console.ReadLine() ?? string.Empty;
             Console.WriteLine("\nInsira o id do produto: \n");
-            productID = Console.ReadLine() ?? string.Empty;
+            ref1 = Console.ReadLine();
+            ref2 = int.Parse(ref1);
+            product.id[forId] = ref2;
             Console.WriteLine("\nInsira o preço do produto: \n");
-            productPrice = Console.ReadLine() ?? string.Empty;
+            F_ref1 = Console.ReadLine();
+            F_ref2 = float.Parse(F_ref1);
+            product.prices[forId] = F_ref2;
             Console.WriteLine("\nInsira a refrerência do produto: \n");
-            reference = Console.ReadLine() ?? string.Empty;
+            product.references[forId] = Console.ReadLine() ?? string.Empty;
             return productName + productID + productPrice + reference;
         }
 
