@@ -63,12 +63,16 @@ namespace program
 
         public static string searchProduct()
         {
+            string nullString = string.Format("");
+            string nullString2 = string.Format("");
+            bool isUsed = true;
+            int id = 0;
             string productString = string.Empty;
             Console.WriteLine("\nInsira o produto para pesquisa: ");
-            productString = Console.ReadLine();
+            productString = string.Format(Console.ReadLine());
             if (productString != string.Empty)
             {
-                mainDatabase(productString);
+                mainDatabase(productString , nullString , nullString2 , id , isUsed);
                 productString = string.Empty;
             }
             else
@@ -116,7 +120,7 @@ namespace program
             }
             else if (option.Equals("2"))
             {
-
+                searchProduct();
             }
         }
     }
