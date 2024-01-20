@@ -11,5 +11,4 @@ Nesse dia eu tentei fazer um algoritimo que lê as informações da máquina uti
 # Dia 05:
 O projeto desse dia é um projeto de um sistema de mercado, ele está ainda em andamento pois ele está cheio de bug.
 # Dia 06:
-Esse é um projeto de criação de um sistema de cadastramento de produtos utilizando Structs em C# onde o usuário tem entradas como cliente e o produto;
-esse projeto ainda está em andamento.
+Esse é um projeto de criação de um sistema de cadastramento de produtos utilizando Structs em C# onde o usuário tem entradas como cliente e o produto, mesmo esse projeto ainda estar em andamento esse projeto é um pouco mais comum.
