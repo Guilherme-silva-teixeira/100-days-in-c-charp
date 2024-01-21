@@ -1,0 +1,28 @@
+# Esse fluxo de trabalho criará um projeto .NET
+# Para obter mais informações, consulte: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
+
+nome: . .NET
+
+em:
+ empurrar:
+ galhos: [ "principal" ]
+ pull_request:
+ galhos: [ "principal" ]
+
+empregos:
+ construir:
+
+ corre: mais recente
+
+ passos:
+    - usa: actions / checkout @ v3
+    - nome: Configuração .NET
+ usa: actions / setup-dotnet @ v3
+ com:
+ versão dotnet: 6.0.x
+    - nome: Restaure dependências
+ corre: restauração de dotnet
+    - nome: Construir
+ corre: dotnet build - no-restore
+    - nome: Teste
+ corre: teste dotnet - sem construção - verbosidade normal
