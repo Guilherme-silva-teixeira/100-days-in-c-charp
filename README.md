@@ -1,16 +1,15 @@
-# Dia 01:
-No dia 01 eu decidi aprender a linguagem c# já que eu ja tinha visto alguns cursos de c++ e oeutras linguagens como java por exemplo;
-Eu decidi fazer o meu primeiro programa em c# utilizando o conceito de variaveis e funções;
-Também fiz uma cauculadora utilizando o terminal como dispositivo de entrada e saida.
+# Dia 01 :
+No dia 01 eu decidi aplicar uma língua c # já que eu ja tinha visto alguns cursos de c ++ e oeutras linguagens como java por exemplo ;
+Eu decidi fazer ou meu primeiro programa em c # utilizando o conceito de variações e funções ;
+Também fez uma máquina de calcular utilizando o terminal como dispositivo de entrada e saida.
 # Dia 02:
-Nesse dia eu tentei fazer um jogo da velha utilizando o conceito de strings, arrays e condicionais (falta eu resolver os bugs do conceito de entrada e saida.
+Nesse dia eu tentei fazer um jogo de velha utilizando o conceito de cordas, matrizes e condições (falta eu resolve os erros do conceito de entrada e saida).
 # Dia 03:
-Nesse dia eu tentei fazer um programa que caucula os lados do triângulo escaleno com a fórmula de Pitágoras, nesse dia eu aprendi mais sobre os comandos matemáticos do c#.
+Nesse dia eu tentei fazer um programa que caucula os lados do triângulo escaleno com uma fórmula de Pitágoras, esse é o meu melhor dos comandos matemáticos do c #.
 # Dia 04:
-Nesse dia eu tentei fazer um algoritimo que lê as informações da máquina utilizada pelo usuário como número de processadores, sistema operacional, nome da máquina, etc além de obter as informações de localização de data é hora utilizando os recursos do Environment do c#.
+Este é o melhor indicador de que você pode obter informações como a máquina utilizada pelo usuário como número de processos, sistema operacional, nome da máquina, etc., como informações sobre localização de dados, hora de utilização ou recursos do ambiente do c #.
 # Dia 05:
-O projeto desse dia é um projeto de um sistema de mercado, ele está ainda em andamento pois ele está cheio de bug.
+O projeto é um projeto de um sistema de mercado, ele está próximo de um problema no caso de bug.
 # Dia 06:
-Esse é um projeto de criação de um sistema de cadastramento de produtos utilizando Structs em C# onde o usuário tem entradas como cliente e o produto, mesmo esse projeto ainda estar em andamento esse projeto é um pouco mais comum.
+Esse é um projeto de criação de um sistema de registro de produtos utilizados Estruturas em C # onde ou usuário tem entradas como cliente e o produto, mesmo esse projeto ainda está em um projeto ou um pouco mais comum.
 # Dia 07:
-Nesse dia eu tentei aprender os principios de como se deve usar o .NET assim criando as minhas primeiras aplicações web com C#.
