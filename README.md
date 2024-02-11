@@ -17,3 +17,7 @@ No dia 7, eu tentei criar um projeto que utilize algumas regras de formação de
 # Dia 08:
 Projeto de desafio – Desenvolver estruturas foreach e if-elseif-else para processar dados de matriz em C# - Este é um projeto da documentação da Microsoft;
 [se eu não coloquei o repositório eu vou botar].
+# Dia 09:
+Falta inventar a descrição e as imagens...
+# Dia 10:
+Falta inventar a descrição e as imagens...
