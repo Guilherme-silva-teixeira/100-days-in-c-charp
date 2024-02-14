@@ -20,4 +20,5 @@ Projeto de desafio – Desenvolver estruturas foreach e if-elseif-else para proc
 # Dia 09:
 Falta inventar a descrição e as imagens...
 # Dia 10:
-Falta inventar a descrição e as imagens...
+Este é um sistema para uma loja onde o usuário é capaz de cadastrar um especifico produto e suas caracteristicas como preço, descrição, referência e posição onde esse produto se localiza;
+este é um projeto utilizando o pacote do windows forms para a criação das interfaces.
