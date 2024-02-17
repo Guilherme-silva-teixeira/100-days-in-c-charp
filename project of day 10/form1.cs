@@ -25,5 +25,10 @@ namespace store
             Form1 inForm = new Form1();
             inForm.Close();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
