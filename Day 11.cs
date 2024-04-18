@@ -7,6 +7,7 @@ class program
             string[] array = new string[13];
             for (int i = 0; i < array.Length; i++)
             {
+                Console.WriteLine("insert the value of the " + i + " array: ");
                 array[i] = Console.ReadLine();
             }
             if (array.Length <= 0)
@@ -18,11 +19,11 @@ class program
                 {
                     if (array[i] == "0")
                     {
-                        Console.WriteLine("The value of the array is null");
+                        Console.WriteLine("\nThe value of the array is null\n");
                     }
                     else
                     {
-                        Console.WriteLine(array[i]);
+                        Console.WriteLine(array[i]+"\n");
                     }
                 }
             }
