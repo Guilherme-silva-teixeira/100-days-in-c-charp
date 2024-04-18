@@ -1,1 +1,18 @@
-
+class program
+{
+    public static void Main(String[] args)
+    {
+        string[] array = new string[13];
+        for (int i = 0; i < array.Length; i++)
+        {
+            array[i] = Console.ReadLine();
+        }
+        if (array.Length <= 0)
+        {
+            return;
+        }else
+        {
+            
+        }
+    }
+}
