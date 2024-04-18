@@ -2,7 +2,8 @@ using System;
 
 namespace content
 {
-    class DayOneProject2
+ 
+   class DayOneProject2
     {
         static void Main(string[] args)
         {
