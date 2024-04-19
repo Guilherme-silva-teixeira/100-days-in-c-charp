@@ -22,3 +22,5 @@ Falta inventar a descrição e as imagens...
 # Dia 10:
 Este é um sistema para uma loja onde o usuário é capaz de cadastrar um especifico produto e suas caracteristicas como preço, descrição, referência e posição onde esse produto se localiza;
 este é um projeto utilizando o pacote do windows forms para a criação das interfaces.
+# Dia 11
+Este era para ser um programa que verifica varias arrays ao mesmo tempo.
